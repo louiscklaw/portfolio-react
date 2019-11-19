@@ -7,10 +7,11 @@ import TwitterMeta from './TwitterMeta'
 
 class HelloWorldMeta extends React.Component {
   render() {
+    console.log(this.props.project_name);
     return (
         <div className="wrapper">
           <MetaTags>
-            <title>helloworld title</title>
+            <title>{this.props.project_name + ' details'} </title>
           </MetaTags>
           <CommonMeta />
           <OpenGraphMeta />

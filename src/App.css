@@ -1,14 +1,8 @@
 
 .content {
-  background-color: #2980b9;
+  background-color: #c0392b;
 
   width: calc( 100vw - 20vw ) ;
-  height: 100vh;
-}
-
-nav {
-  background-color: #c0392b;
-  width: 20vw;
   height: 100vh;
 }
 

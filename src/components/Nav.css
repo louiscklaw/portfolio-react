@@ -1,0 +1,15 @@
+
+.nav {
+  display: block;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+
+
+
+  background-color: #2980b9;
+  width: 20vw;
+  height: 100vh;
+}

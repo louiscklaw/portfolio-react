@@ -1,15 +1,17 @@
 import React from 'react'
 
-import {Link} from 'react-router-dom'
+import NavTop from './NavTop'
+import NavMiddle from './NavMiddle'
+import NavBottom from './NavBottom'
+
+import './Nav.css'
 
 export default () => (
-  <nav>
-    <ul>
-      <li><Link to="/">home</Link></li>
-      <li><Link to="/projects">projects</Link></li>
-      <li><Link to="/logs">logs</Link></li>
-      <li><Link to="/contact">contact</Link></li>
-      <li><Link to="/helloworld">helloworld</Link></li>
-    </ul>
-  </nav>
+  <div className="nav-wrapper">
+    <nav className="nav">
+      <NavTop />
+      <NavMiddle />
+      <NavBottom />
+    </nav>
+  </div>
 )
