@@ -18,8 +18,6 @@ class Nav extends Component{
     return (
       <div className="nav-wrapper">
         <nav className="nav">
-          <button onClick={testError}>Break the world</button>
-
           <NavTop />
           <NavMiddle />
           <NavBottom />
