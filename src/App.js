@@ -12,6 +12,8 @@ import Nav from './components/Nav'
 
 import Home from './pages/Home'
 import Contact from './pages/Contact'
+import Projects from './pages/Projects.js'
+import Logs from './pages/Logs.js'
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
         <Nav></Nav>
         <Switch>
           <Route exact path="/" component={Home} />
+
+          <Route path="/projects" component={Projects} />
+          <Route path="/logs" component={Logs} />
           <Route path="/contact" component={Contact} />
         </Switch>
       </div>
