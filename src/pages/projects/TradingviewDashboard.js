@@ -1,6 +1,7 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/NewWindowLink'
+import ProjectTitle from '../../components/ProjectTitle'
+import NewWindowLink from '../../components/Links/NewWindowLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 
 import './ProjectDescription.css';
@@ -13,6 +14,8 @@ class ProjectDescription extends React.Component{
       <div className="desc-container">
         <div className="project-description">
           <BackToProjects />
+
+          <ProjectTitle project_title="tradingview dashboard" />
 
           <div className="desc-header-picture" >
             <img src="/assets/proj_thumbnails/tradingview-dashboard.png" />
@@ -27,14 +30,9 @@ class ProjectDescription extends React.Component{
 
             <h3 className="topic">ref/repo:</h3>
             <NewWindowLink link="https://github.com/louiscklaw/tradingview-tile-tryout" />
-
           </div>
-
-
         </div>
-
       </div>
-
     )
   }
 }
