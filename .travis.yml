@@ -6,7 +6,7 @@ node_js:
 script:
   -
 
-before_deploy: "yarn install && yarn build"
+before_deploy: "sh ./deploy.sh"
 
 deploy:
   provider: firebase
