@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "node"
+  - 8
 
 script:
   -
@@ -10,4 +10,3 @@ deploy:
   provider: firebase
   token:
     secure: "j0IUetAyJRpTQSW6Cy57rkiW2SEYsmUAeffPxCAf+Aqkt/dXTyALgW78KikwE0IStMtPRHJsn3GgsyCxXKuqMUtjXI5HC+1Wv683jhOeXhrOXt0M6RD/sGTAr8aybLZlepuC8CUbcxtXHc+oB75eOATPAyNAeSRNzdZF9Qbkn13M+M6AEik5hLp4lzC8o5oeuqH/1tUHlpHDnWEzjsLIDb13Q19rIaP8pz+QEJ3cUpekUHynoyJsMArGdXBqM3MJrpFBtv/vgz9PReqKqXdwYHKPTlk7w0d8+b8ijZXrQya9gN0Wxw/aOOiLRieADFSRYR60TdRvfeeUfV1PV3piXFWH2dkLaHyWdCKSwPQkty4o612g36wRPp4whfsRMAwoSyXto0wQwr9ysojna25c5Q+SMz95roAT2sUsJZMo62a2Cp+Nhvi1hPvC7Vdel79X3+h95Sb0cE7QFm+ivSZ8TbejIX0o2gJkGZSBrCyW33O9X6I1sAvPXKl10j0yndJFuk4fNC6RQ0G2wgI20UbwU0dJtqoFTpwbYCjBvjUneBSQmhsjYDusVhp23RR9rc4tgcW6MlnLcOPIjz8LnNzKd8XUoN0ptyfOpW1NLI0IfqG9G8sgiVQovskc3Pw9iyH2J/lT7pz2QFev6R2nPrtBB3T+sLvshKpuSol3KtsICOM="
-  project: test-hosting-f43e9
