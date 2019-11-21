@@ -10,8 +10,7 @@ node_js:
 
 install:
   - yarn install
-  - cd $TRAVIS_BUILD_DIR/functions
-  - yarn install
+  - cd $TRAVIS_BUILD_DIR/functions && yarn install && cd $TRAVIS_BUILD_DIR
 
 cache:
     npm: true
