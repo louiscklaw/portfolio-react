@@ -9,9 +9,9 @@ node_js:
   - 8
 
 install:
-  - npm install
+  - yarn install
   - cd $TRAVIS_BUILD_DIR/functions
-  - npm install
+  - yarn install
 
 cache:
     npm: true
