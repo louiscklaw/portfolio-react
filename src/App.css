@@ -1,6 +1,6 @@
 
 .content {
-  background-color: #c0392b;
+  /* background-color: red; */
 
   width: calc( 100vw - 20vw ) ;
   height: 100vh;
@@ -15,7 +15,8 @@
 }
 
 #root {
-  background-color: red;
+  background-color: #ecf0f1;
+
   display: blcok;
   width:100%;
   height: 100%;

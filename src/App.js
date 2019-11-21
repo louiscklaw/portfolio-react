@@ -9,7 +9,12 @@ import Nav from './components/Nav'
 
 import SwitchRoute from './routes/SwitchRoute'
 
+// fortawesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
+library.add(fab, fas)
 
 function App() {
   return (
