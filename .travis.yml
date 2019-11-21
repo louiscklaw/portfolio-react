@@ -10,14 +10,19 @@ node_js:
 
 install:
   - yarn install
-  - cd $TRAVIS_BUILD_DIR/functions && yarn install && cd $TRAVIS_BUILD_DIR
-  - echo $TRAVIS_NODE_VERSION
+  - cd $TRAVIS_BUILD_DIR/functions && yarn install
 
+script:
+  - cd $TRAVIS_BUILD_DIR
+  - echo $TRAVIS_NODE_VERSION
+  - yarn test
+  - yarn build
 
 before_deploy:
   - npm install -g firebase-tools
 
 deploy:
+  # production deploy
   - provider: script
     skip_cleanup: true
     script: firebase deploy --project $FIREBASE_PROJECT --token $FIREBASE_TOKEN --non-interactive
@@ -25,6 +30,7 @@ deploy:
       all_branches: true
       condition: $TRAVIS_BRANCH = "feature/add-travis-ci" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
+  # staging deploy
   - provider: script
     skip_cleanup: true
     script: firebase deploy --project $FIREBASE_DEV_PROJECT --token $FIREBASE_DEV_TOKEN --non-interactive
