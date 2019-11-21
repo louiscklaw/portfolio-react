@@ -5,8 +5,8 @@ import ProjectTile from '../components/ProjectTile'
 import './ProjectList.css'
 
 let tile_config = {
-  'tradingview-dashboard': 'assets/proj_thumbnails/tradingview-dashboard.png',
-  'voron-tryout': 'assets/proj_thumbnails/voron-tryout.jpg',
+  'tradingview-dashboard': '/assets/proj_thumbnails/tradingview-dashboard.png',
+  'voron-tryout': '/assets/proj_thumbnails/voron-tryout.jpg',
 }
 
 function tileContent(){
