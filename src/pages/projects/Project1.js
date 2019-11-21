@@ -1,14 +1,19 @@
 import React from 'react';
 
+import {Link} from 'react-router-dom'
+
 import MetaHelloworld from '../../components/meta/ProjectDetail'
 
-import {Link} from 'react-router-dom'
+import ProjectTitle from '../../components/ProjectTitle'
 
 export default () => (
   <div>
+
     <MetaHelloworld project_name="Project1 "/>
 
     <Link to="/projects">Back</Link>
-    <p>project detail 1</p>
+
+    <ProjectTitle project_title="test title" />
+
   </div>
 )
