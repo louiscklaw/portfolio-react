@@ -6,9 +6,12 @@ import './ProjectTile.css'
 export default ({proj_image, proj_name, proj_link}) => {
   return (
     <div className="project-tile">
-      <div style={{backgroundImage: `url(${proj_image})`}} className="tile-bg"></div>
-      <p>{proj_name}</p>
-      <Link to={proj_link} />
+      <Link to={proj_link} >
+
+        <div style={{backgroundImage: `url(${proj_image})`}} className="tile-bg"></div>
+        <p>{proj_name}</p>
+
+      </Link>
     </div>
   )
 }
