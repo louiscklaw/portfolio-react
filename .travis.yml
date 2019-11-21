@@ -1,7 +1,21 @@
 #.travis.yml
 sudo: false
+
 dist: trusty
+
 language: node_js
+
 node_js:
   - "node"
   - $FIREBASE_NODE_VER
+
+install:
+  - npm install
+  - cd $TRAVIS_BUILD_DIR/functions
+  - npm install
+
+cache:
+    npm: true
+    directories:
+        - node_modules
+        - functions/node_modules
