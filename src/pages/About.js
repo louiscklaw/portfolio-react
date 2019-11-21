@@ -22,7 +22,7 @@ export default () => (
       <p>Linux servers management, Web frontend (jquery/materialize.css/nuxt.js), SQL (Postgres, MySQL/MariaDB), NoSQL (Redis), Realtime DB (Firebase), Message Queues (bull), ORM (sequalize), Desktop applications (wxpython/tkinter/electron), Serverless (Cloudflare Worker/Firebase Cloud Functions), PaaS (Heroku), Docker with docker-compose, nginx (Load balancing + Failover), Minecraft plugins, Django, Simple JS/Canvas games, OCR/captcha study, KVM (Performance optimization, GPU Passthrough by OVMF), AUR packages maintaining, After Effects, Sony Vegas</p>
 
       <h4>Worth mentioning:</h4>
-      <p>ABOUT This is Louis Law. 👋 Handy - Hi. inc. Quality Assurance Engineer(Automation) Sierrawireless validation engineer CMHK Engineer(RAN) City University of Hong Kong Tsing Yi IVE Kwun Tong Ti</p>
+      <p>ABOUT This is Louis Law.  Handy - Hi. inc. Quality Assurance Engineer(Automation) Sierrawireless validation engineer CMHK Engineer(RAN) City University of Hong Kong Tsing Yi IVE Kwun Tong Ti</p>
 
 
       </div>
