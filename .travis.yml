@@ -28,15 +28,15 @@ deploy:
     script: firebase deploy --project $FIREBASE_PROJECT --token $FIREBASE_TOKEN --non-interactive
     on:
       all_branches: true
-      condition: $TRAVIS_BRANCH = "feature/add-travis-ci" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
+      condition: $TRAVIS_BRANCH = "master" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
   # staging deploy
   - provider: script
     skip_cleanup: true
-    script: firebase deploy --project $FIREBASE_DEV_PROJECT --token $FIREBASE_DEV_TOKEN --non-interactive
+    script: firebase deploy -f --project $FIREBASE_DEV_PROJECT --token $FIREBASE_DEV_TOKEN --non-interactive
     on:
       all_branches: true
-      condition: $TRAVIS_BRANCH = "develop" && $FIREBASE_DEV_DEPLOY = "true" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
+      condition: $TRAVIS_BRANCH = "feature/add-travis-ci" && $FIREBASE_DEV_DEPLOY = "true" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
 cache:
     npm: true
