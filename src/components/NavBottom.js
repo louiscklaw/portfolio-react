@@ -10,7 +10,7 @@ export default () => (
           here<i className="fas fa-external-link-alt"></i></a>
       </p>
     </div>
-    <img src="https://travis-ci.org/louiscklaw/portfolio-react.svg?branch=master" />
+    <img src="https://travis-ci.org/louiscklaw/portfolio-react.svg?branch=master" alt="" />
   </div>
 )
 
