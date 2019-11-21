@@ -7,7 +7,6 @@ script:
   -
 
 before_deploy: "sh ./deploy.sh"
-after_deploy: "firebase deploy --debug"
 
 deploy:
   provider: firebase
