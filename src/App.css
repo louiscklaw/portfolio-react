@@ -3,7 +3,7 @@
   /* background-color: red; */
 
   width: calc( 100vw - 20vw ) ;
-  height: 100vh;
+  background-color: #ecf0f1;
 }
 
 .App {

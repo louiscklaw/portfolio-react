@@ -1,12 +1,17 @@
 import React from 'react';
-import './ProjectDescription.css'
 
-import NewWindowLink from './NewWindowLink'
+import NewWindowLink from '../../components/NewWindowLink'
+import BackToProjects from '../../components/Links/BackToProjects'
+
+import './TradingviewDashboard.css'
+
 
 class ProjectDescription extends React.Component{
   render(){
     return (
       <div className="project-description-container">
+        <BackToProjects />
+
         <img
           src="https://raw.githubusercontent.com/louiscklaw/tradingview-tile-tryout/master/src/img/sc.png"
           alt="" srcSet=""

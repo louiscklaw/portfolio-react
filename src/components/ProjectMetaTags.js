@@ -5,7 +5,7 @@ import './ProjectMetaTags.css'
 
 export default ({meta_tags})=>{
   let meta_tag_html = meta_tags
-    .map(tag => <div className="project-tag"> {tag} </div>)
+    .map(tag => <div className="project-tag" key={tag}> {tag} </div>)
 
   return (
     <div className="project-meta-tags">
