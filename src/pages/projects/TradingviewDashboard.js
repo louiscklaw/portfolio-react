@@ -11,6 +11,7 @@ import './TradingviewDashboard.css';
 class ProjectDescription extends React.Component{
   render(){
     return (
+
       <div className="desc-container">
         <div className="project-description">
           <BackToProjects />
