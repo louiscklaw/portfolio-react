@@ -9,7 +9,7 @@ export default ({proj_image, proj_name, proj_link}) => {
       <Link to={proj_link} >
 
         <div style={{backgroundImage: `url(${proj_image})`}} className="tile-bg"></div>
-        <p>{proj_name}</p>
+        {/* <p>{proj_name}</p> */}
 
       </Link>
     </div>
