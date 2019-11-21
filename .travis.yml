@@ -6,6 +6,8 @@ node_js:
 script:
   -
 
+before_deploy: "yarn build"
+
 deploy:
   provider: firebase
   token:
