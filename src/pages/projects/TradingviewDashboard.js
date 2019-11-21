@@ -19,7 +19,7 @@ class ProjectDescription extends React.Component{
           <ProjectTitle project_title="tradingview dashboard" />
 
           <div className="desc-header-picture" >
-            <img src="/assets/proj_thumbnails/tradingview-dashboard.png" />
+            <img src="/assets/proj_thumbnails/tradingview-dashboard.png" alt="" />
           </div>
 
           <div className="desc-body">

@@ -1,4 +1,3 @@
-import React from 'react';
 
 import TradingviewDashboard from '../pages/projects/TradingviewDashboard'
 import VoronTryout from '../pages/projects/VoronTryout'

@@ -18,7 +18,7 @@ class ProjectDescription extends React.Component{
           <ProjectTitle project_title="voron 3d printer" />
 
           <div className="desc-header-picture">
-            <img src="/assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg" style={{width: "30%" }}/>
+            <img src="/assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg" style={{width: "30%" }} alt="" />
           </div>
 
           <div className="desc-body">
