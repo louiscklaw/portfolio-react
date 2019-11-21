@@ -4,18 +4,15 @@ import ProjectTile from '../components/ProjectTile'
 
 import './ProjectList.css'
 
-let tile_config = {
-  'tradingview-dashboard': '/assets/proj_thumbnails/tradingview-dashboard.png',
-  'voron-tryout': '/assets/proj_thumbnails/voron-tryout.jpg',
-}
+import tile_configs from '../config/tile_configs'
 
 function tileContent(){
-  return Object.keys(tile_config).map( tile_key => {
+  return Object.keys(tile_configs).map( tile_key => {
     return (
       <li>
         <ProjectTile
           proj_name={tile_key}
-          proj_image={tile_config[tile_key]}
+          proj_image={tile_configs[tile_key]['image']}
           proj_link={'/project_detail/'+tile_key}
         />
       </li>
