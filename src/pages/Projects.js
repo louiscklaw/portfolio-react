@@ -1,7 +1,9 @@
 import React from 'react';
 
+import ProjectList from './ProjectList'
+
 export default () => (
   <div>
-    <p>this is project</p>
+    <ProjectList />
   </div>
 )

@@ -1,17 +1,45 @@
+#.travis.yml
+sudo: false
+
+dist: trusty
+
 language: node_js
 
 node_js:
-  - 8
+  - $FIREBASE_NODE_VER
+
+install:
+  - yarn install
+  - cd $TRAVIS_BUILD_DIR/functions && yarn install
 
 script:
-  -
+  - cd $TRAVIS_BUILD_DIR
+  - echo $TRAVIS_NODE_VERSION
+  - yarn test
+  - yarn build
 
-before_deploy: "sh ./deploy.sh"
+before_deploy:
+  - npm install -g firebase-tools firebase-functions firebase-admin
 
 deploy:
-  provider: firebase
-  token:
-    secure: "j0IUetAyJRpTQSW6Cy57rkiW2SEYsmUAeffPxCAf+Aqkt/dXTyALgW78KikwE0IStMtPRHJsn3GgsyCxXKuqMUtjXI5HC+1Wv683jhOeXhrOXt0M6RD/sGTAr8aybLZlepuC8CUbcxtXHc+oB75eOATPAyNAeSRNzdZF9Qbkn13M+M6AEik5hLp4lzC8o5oeuqH/1tUHlpHDnWEzjsLIDb13Q19rIaP8pz+QEJ3cUpekUHynoyJsMArGdXBqM3MJrpFBtv/vgz9PReqKqXdwYHKPTlk7w0d8+b8ijZXrQya9gN0Wxw/aOOiLRieADFSRYR60TdRvfeeUfV1PV3piXFWH2dkLaHyWdCKSwPQkty4o612g36wRPp4whfsRMAwoSyXto0wQwr9ysojna25c5Q+SMz95roAT2sUsJZMo62a2Cp+Nhvi1hPvC7Vdel79X3+h95Sb0cE7QFm+ivSZ8TbejIX0o2gJkGZSBrCyW33O9X6I1sAvPXKl10j0yndJFuk4fNC6RQ0G2wgI20UbwU0dJtqoFTpwbYCjBvjUneBSQmhsjYDusVhp23RR9rc4tgcW6MlnLcOPIjz8LnNzKd8XUoN0ptyfOpW1NLI0IfqG9G8sgiVQovskc3Pw9iyH2J/lT7pz2QFev6R2nPrtBB3T+sLvshKpuSol3KtsICOM="
+  # production deploy
+  - provider: script
+    skip_cleanup: true
+    script: firebase deploy --project $FIREBASE_PROJECT --token $FIREBASE_TOKEN --non-interactive
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH = "master" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
-  project: "test-hosting-f43e9"
-  edge: true
+  # staging deploy
+  - provider: script
+    skip_cleanup: true
+    script: firebase deploy -f --project $FIREBASE_DEV_PROJECT --token $FIREBASE_DEV_TOKEN --non-interactive
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH = "develop" && $FIREBASE_DEV_DEPLOY = "true" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
+
+cache:
+    npm: true
+    directories:
+        - node_modules
+        - functions/node_modules

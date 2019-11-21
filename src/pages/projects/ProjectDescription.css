@@ -1,0 +1,38 @@
+.desc-body p {
+  padding-top: 5px;
+}
+
+.desc-body h3{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.desc-body {
+  padding-top: 30px;
+}
+
+.desc-header-picture img{
+  width: 100%;
+}
+
+.desc-header-picture {
+  padding-top: 30px;
+}
+
+.proj-picture {
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+}
+
+.project-description {
+  /* background-color: red; */
+  width: 80%;
+  margin-bottom: 80px;
+}
+
+.desc-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}

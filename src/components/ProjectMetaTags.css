@@ -1,0 +1,11 @@
+.project-meta-tags {
+  display: inline-flex;
+}
+
+.project-meta-tags ul {
+  list-style: none;
+}
+
+.project-tag {
+  margin: 0px 5px;
+}

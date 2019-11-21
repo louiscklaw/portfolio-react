@@ -2,6 +2,6 @@ import React from 'react';
 
 export default () => (
   <div>
-    <p>this is project details</p>
+    <p>i am not found page</p>
   </div>
 )

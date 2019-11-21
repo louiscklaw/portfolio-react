@@ -1,13 +1,23 @@
-import React from 'react'
+import React,{Component} from 'react'
 
-import {Link} from 'react-router-dom'
+import NavTop from './NavTop'
+import NavMiddle from './NavMiddle'
+import NavBottom from './NavBottom'
 
-export default () => (
-  <nav>
-    <p>test nav</p>
-    <Link to="/">home</Link>
-    <Link to="/projects">projects</Link>
-    <Link to="/logs">logs</Link>
-    <Link to="/contact">contact</Link>
-  </nav>
-)
+import './Nav.css'
+
+class Nav extends Component{
+  render() {
+    return (
+      <div className="nav-wrapper">
+        <nav className="nav">
+          <NavTop />
+          <NavMiddle />
+          <NavBottom />
+        </nav>
+      </div>
+    )
+  }
+}
+
+export default Nav

@@ -3,30 +3,28 @@ import React from 'react';
 // eslint-disable-next-line
 // import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import {BrowserRouter} from 'react-router-dom'
-import {Switch} from 'react-router-dom'
-import {Route} from 'react-router-dom'
 
 import './App.css';
 
 import Nav from './components/Nav'
 
-import Home from './pages/Home'
-import Contact from './pages/Contact'
-import Projects from './pages/Projects.js'
-import Logs from './pages/Logs.js'
+import SwitchRoute from './routes/SwitchRoute'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab, fas, far)
+
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav></Nav>
-        <Switch>
-          <Route exact path="/" component={Home} />
-
-          <Route path="/projects" component={Projects} />
-          <Route path="/logs" component={Logs} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
+        <Nav />
+        <div className="content">
+          <SwitchRoute />
+        </div>
       </div>
     </BrowserRouter>
   );
