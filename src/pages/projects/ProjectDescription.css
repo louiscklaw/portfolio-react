@@ -1,3 +1,12 @@
+.desc-body ul {
+  list-style: none;
+}
+
+.desc-header-picture img {
+  margin: 0px 5px;
+
+}
+
 .desc-body p {
   padding-top: 5px;
 }
