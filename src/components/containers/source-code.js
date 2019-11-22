@@ -9,7 +9,7 @@ export default ({lang, children}) => {
   return (
     <div>
       <SyntaxHighlighter language={lang} style={monokai} >
-        {children }
+        {children.trim() }
       </SyntaxHighlighter>
     </div>
   )
