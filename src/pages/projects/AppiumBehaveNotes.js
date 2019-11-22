@@ -5,10 +5,15 @@ import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
 import YoutubeContainers from '../../components/containers/youtube'
+import SourceCode from '../../components/containers/source-code'
+
 
 import './ProjectDescription.css';
-
 import './AppiumBehaveNotes.css'
+
+let execute_script=
+`$ virtualenv venv
+$ source venv/bin/activate`
 
 
 class ProjectDescription extends React.Component{
@@ -41,13 +46,39 @@ class ProjectDescription extends React.Component{
             </ul>
 
             <h3 className="topic">To setup</h3>
-            <ul>
-              <li>linux</li>
-              <li>appium</li>
-              <li>python 3.6.1, behave, python-appium-client</li>
-            </ul>
+            <SourceCode lang="shell" >
+              $ pip install -r requirements.txt
+            </SourceCode>
+
+            <h3 className="topic">to execute</h3>
+            <h4 className="topic">activate virtual environment</h4>
+            <SourceCode lang="shell" >
+              {execute_script}
+            </SourceCode>
+
+            <h4 className="sub-topic">install python libraries</h4>
+            <SourceCode lang="shell" >
+              {`$ pip install -r requirements.txt`}
+            </SourceCode>
+
+            <h4 className="sub-topic">start appium -> connect to android / genymotion appium</h4>
+            <SourceCode lang="shell" >{
+`$ python behave
+$ behave ./features/HKOApp_9DayForecast.feature`
+}
+            </SourceCode>
 
 
+            <h3 className="topic">Demo</h3>
+            <h4 className="sub-topic">passing example</h4>
+            <YoutubeContainers src="https://www.youtube.com/embed/Ce-v1zTHhwU" />
+
+            <h4 className="sub-topic">failing example</h4>
+            <YoutubeContainers src="https://www.youtube.com/embed/uR8VLSwvf9Q" />
+
+            <h3 className="topic">system structure</h3>
+            <h3 className="topic">Behave grammer</h3>
+            <h3 className="topic">stack on MAC machine:</h3>
 
 
             <h3 className="topic">ref/repo:</h3>

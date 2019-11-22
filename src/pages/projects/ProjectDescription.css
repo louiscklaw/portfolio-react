@@ -1,3 +1,17 @@
+
+code span {
+  font-family: Consolas,Monaco;
+}
+
+code {
+  font-family: Consolas,Monaco;
+}
+
+.topic:first-letter{
+  text-transform: capitalize
+}
+
+
 .desc-body ul {
   list-style: none;
 }
