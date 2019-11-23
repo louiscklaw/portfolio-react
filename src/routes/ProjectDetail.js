@@ -10,7 +10,7 @@ import tile_configs from '../config/tile_configs'
 
 function getRoutes(match){
   return Object.keys(tile_configs).map(tile_config_key => {
-    return (<Route path={`${match.url}/${tile_config_key}`} component={tile_configs[tile_config_key]['component']} />)
+    return (<Route path={`${match.url}/${tile_config_key}`} component={tile_configs[tile_config_key]['component']} key={tile_config_key} />)
   })
 }
 
