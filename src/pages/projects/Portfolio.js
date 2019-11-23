@@ -20,6 +20,9 @@ class ProjectDescription extends React.Component{
           <ProjectTitle project_title="portfolio" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
+          </div>
+
+          <div className="desc-body">
             <h3 className="topic">made by react</h3>
             <p className="desc"> a react portfolio</p>
 
@@ -30,6 +33,7 @@ class ProjectDescription extends React.Component{
               <li>wordpress portfolio</li>
             </ul>
           </div>
+
         </div>
       </div>
     )
