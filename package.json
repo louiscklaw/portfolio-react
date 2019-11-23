@@ -49,7 +49,7 @@
   },
   "jest": {
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|react-native-button|react-syntax-highlighter)/)"
+      "node_modules/(?!(react))"
     ]
   }
 }
