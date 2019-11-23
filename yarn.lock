@@ -2062,6 +2062,13 @@ babel-plugin-dynamic-import-node@2.3.0, babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
+babel-plugin-import-static-files@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-import-static-files/-/babel-plugin-import-static-files-1.0.4.tgz#2b9c36d55be1f25f8db39b9c625df005563049e0"
+  integrity sha512-TRkwmDpZCdISOulOomqqlOf4c06NrPBcIEiZLtBzK5y1oSz+cEOXw/C+0nGjnDFDWlMLTI3ZntvlBUYXqIR07Q==
+  dependencies:
+    fs-extra "^4.0.2"
+
 babel-plugin-istanbul@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-5.2.0.tgz#df4ade83d897a92df069c4d9a25cf2671293c854"
