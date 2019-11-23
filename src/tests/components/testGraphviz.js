@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Graphviz from '../components/containers/graphviz';
+import Graphviz from '../../components/containers/graphviz';
 
 it('renders helloworld call for graphviz without crashing', () => {
   const div = document.createElement('div');
