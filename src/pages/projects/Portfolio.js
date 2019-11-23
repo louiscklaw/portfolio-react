@@ -1,10 +1,10 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/Links/NewWindowLink'
+// import NewWindowLink from '../../components/Links/NewWindowLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
-import YoutubeContainers from '../../components/containers/youtube'
+// import YoutubeContainers from '../../components/containers/youtube'
 
 import './ProjectDescription.css';
 import './VoronTryout.css'
@@ -20,6 +20,9 @@ class ProjectDescription extends React.Component{
           <ProjectTitle project_title="portfolio" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
+          </div>
+
+          <div className="desc-body">
             <h3 className="topic">made by react</h3>
             <p className="desc"> a react portfolio</p>
 
@@ -30,6 +33,7 @@ class ProjectDescription extends React.Component{
               <li>wordpress portfolio</li>
             </ul>
           </div>
+
         </div>
       </div>
     )
