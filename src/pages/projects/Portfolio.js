@@ -17,27 +17,18 @@ class ProjectDescription extends React.Component{
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="voron 3d printer" />
+          <ProjectTitle project_title="portfolio" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
-            <div style={{maxWidth: "30%" }}>
-              <img src="/assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg"  alt="" />
-            </div>
-            <div style={{maxWidth: "30%" }}>
-              <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />
-            </div>
-          </div>
+            <h3 className="topic">made by react</h3>
+            <p className="desc"> a react portfolio</p>
 
-          <div className="desc-body">
-            <h3 className="topic">Purpose</h3>
-            <p>to build a opensource 3d printer named voron</p>
 
-            <h3 className="topic">Demo</h3>
-            <NewWindowLink link="https://louiscklaw.github.io/tradingview-tile-tryout" />
-
-            <h3 className="topic">ref/repo:</h3>
-            <NewWindowLink link="https://www.reddit.com/r/voroncorexy/" />
-
+            <h3 className="topic">log:</h3>
+            <ul>
+              <li>pug portfolio</li>
+              <li>wordpress portfolio</li>
+            </ul>
           </div>
         </div>
       </div>
