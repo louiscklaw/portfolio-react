@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/Links/NewWindowLink'
+// import NewWindowLink from '../../components/Links/NewWindowLink'
 import GithubLink from '../../components/Links/GithubLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
