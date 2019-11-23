@@ -1,5 +1,9 @@
 import React from 'react';
 
+import MetaTitle from '../../components/MetaTitle'
+import MetaProjectDetail from '../../components/meta/ProjectDetail'
+
+
 import NewWindowLink from '../../components/Links/NewWindowLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
@@ -13,6 +17,10 @@ import './VoronTryout.css'
 class ProjectDescription extends React.Component{
   render(){
     return (
+      <>
+      <MetaProjectDetail />
+      <MetaTitle text="traefik tryout" />
+
       <div className="desc-container">
         <div className="project-description">
           <BackToProjects />
@@ -41,6 +49,7 @@ class ProjectDescription extends React.Component{
           </div>
         </div>
       </div>
+      </>
     )
   }
 }
