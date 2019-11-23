@@ -13,19 +13,21 @@ import YoutubeContainers from '../../components/containers/youtube'
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
+let page_topic = 'traefik tryout'
+
 
 class ProjectDescription extends React.Component{
   render(){
     return (
       <>
       <MetaProjectDetail />
-      <MetaTitle text="traefik tryout" />
+      <MetaTitle text={page_topic} />
 
       <div className="desc-container">
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="voron 3d printer" />
+          <ProjectTitle project_title={[page_topic]} />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>
