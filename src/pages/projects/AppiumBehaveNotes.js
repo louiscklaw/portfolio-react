@@ -1,12 +1,13 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/Links/NewWindowLink'
+// import NewWindowLink from '../../components/Links/NewWindowLink'
+import GithubLink from '../../components/Links/GithubLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
 import YoutubeContainers from '../../components/containers/youtube'
 import SourceCode from '../../components/containers/source-code'
-
+import Graphviz from '../../components/containers/graphviz'
 
 import './ProjectDescription.css';
 import './AppiumBehaveNotes.css'
@@ -50,6 +51,11 @@ class ProjectDescription extends React.Component{
               $ pip install -r requirements.txt
             </SourceCode>
 
+            <h3 className="topic">to install appium</h3>
+            <SourceCode lang="shell">
+              $ sudo npm install -g appium --unsafe-perm=true --allow-root
+            </SourceCode>
+
             <h3 className="topic">to execute</h3>
             <h4 className="topic">activate virtual environment</h4>
             <SourceCode lang="shell" >
@@ -77,12 +83,72 @@ $ behave ./features/HKOApp_9DayForecast.feature`
             <YoutubeContainers src="https://www.youtube.com/embed/uR8VLSwvf9Q" />
 
             <h3 className="topic">system structure</h3>
-            <h3 className="topic">Behave grammer</h3>
-            <h3 className="topic">stack on MAC machine:</h3>
+            <Graphviz dot={`
+                digraph {
+                  rankdir=TD;
+                  node [shape=rectangle]
+                  nOperator [label="operator\njenkins"]
+                  nBehave [label="behave\n.steps files "]
+                  nPython [label="python\nandroid_function.py\nhandy_logger.py "]
+                  nAppium [label="appium"]
+                  nADB [label="ADB"]
+                  nAVD [label="AVD / Genymotion"]
+                  nAndroid [label="Android"]
+                  nOperator -> nBehave [label="lang=gherkin"]
 
+                  nOperator -> nBehave
+                  nBehave -> nPython
+                  nPython -> nAppium
+                  nAppium -> nAVD nADB -> nAVD
+                  subgraph{ nAppium -> nADB nADB -> nAndroid }
+                }
+              `}/>
+
+            <h3 className="topic">Behave grammer</h3>
+            <Graphviz dot={`
+                digraph {
+                  rankdir=LR;
+                  node [shape=rectangle]
+                  start [label="start"]
+                  end [label="end"]
+
+                  pass [label="pass"]
+                  fail [label="fail"]
+                  wait [label="wait"]
+
+                  test_purpose [label="test\npurpose"]
+
+                  start->pass
+                  start->fail
+                  start->wait
+
+                  pass->test_purpose
+                  fail->test_purpose
+                  wait->test_purpose
+
+                  test_purpose->end
+                }
+            `}/>
+
+
+            <h3 className="topic">stack on MAC machine:</h3>
+            <SourceCode lang="shell" >{`
+brew cask install visual-studio-code
+brew install zsh-history-substring-search
+brew install zsh
+brew install zsh-lovers
+brew install zsh-autosuggestions
+brew install zsh-navigation-tools
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+brew install zsh-git-prompt
+brew install zshdb
+brew install git-flow
+              `}
+            </SourceCode>
 
             <h3 className="topic">ref/repo:</h3>
-            <NewWindowLink link="https://www.reddit.com/r/voroncorexy/" />
+            <GithubLink link="https://github.com/louiscklaw/behave_tryout" />
 
           </div>
         </div>

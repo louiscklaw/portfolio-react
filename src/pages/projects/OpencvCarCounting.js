@@ -1,14 +1,16 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/Links/NewWindowLink'
+import GithubLink from '../../components/Links/GithubLink'
+
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
 import YoutubeContainers from '../../components/containers/youtube'
 
 import './ProjectDescription.css';
-import './VoronTryout.css'
+import './OpencvCarCounting.css'
 
+import head_pic from '../../assets/projects/opencv-car-counting/opencv-car-counting.jpg'
 
 class ProjectDescription extends React.Component{
   render(){
@@ -17,26 +19,33 @@ class ProjectDescription extends React.Component{
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="voron 3d printer" />
+          <ProjectTitle project_title="opencv car counting" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
-            <div style={{maxWidth: "30%" }}>
-              <img src="/assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg"  alt="" />
+            <div>
+              <img src={head_pic}  alt="" />
             </div>
-            <div style={{maxWidth: "30%" }}>
-              <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />
-            </div>
+
           </div>
 
           <div className="desc-body">
-            <h3 className="topic">Purpose</h3>
-            <p>to build a opensource 3d printer named voron</p>
+            <h3 className="topic">Purpose / description</h3>
+            <p>To count the number of cars passing by images only. This project is created on top of the another github work.</p>
 
-            <h3 className="topic">Demo</h3>
-            <NewWindowLink link="https://louiscklaw.github.io/tradingview-tile-tryout" />
+            <h3 className="topic">Requirements:</h3>
+            <ul>
+              <li>python</li>
+              <li>docker</li>
+              <li>linux</li>
+            </ul>
 
-            <h3 className="topic">ref/repo:</h3>
-            <NewWindowLink link="https://www.reddit.com/r/voroncorexy/" />
+            <h3 className="topic">Demo:</h3>
+            <div style={{maxWidth: "30%" }}>
+              <YoutubeContainers src="https://www.youtube.com/embed/8P3VEGvMeTQ" />
+            </div>
+
+            <h3 className="topic">repository:</h3>
+            <GithubLink link="https://github.com/louiscklaw/car_tracking_tryout" />
 
           </div>
         </div>

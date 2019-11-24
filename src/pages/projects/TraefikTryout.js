@@ -1,5 +1,9 @@
 import React from 'react';
 
+import MetaTitle from '../../components/MetaTitle'
+import MetaProjectDetail from '../../components/meta/ProjectDetail'
+
+
 import NewWindowLink from '../../components/Links/NewWindowLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
@@ -9,15 +13,21 @@ import YoutubeContainers from '../../components/containers/youtube'
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
+let page_topic = 'traefik tryout'
+
 
 class ProjectDescription extends React.Component{
   render(){
     return (
+      <>
+      <MetaProjectDetail />
+      <MetaTitle text={page_topic} />
+
       <div className="desc-container">
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="voron 3d printer" />
+          <ProjectTitle project_title={[page_topic]} />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>
@@ -41,6 +51,7 @@ class ProjectDescription extends React.Component{
           </div>
         </div>
       </div>
+      </>
     )
   }
 }
