@@ -6,14 +6,14 @@ import GistLink from '../../components/Links/GistLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
-import YoutubeContainers from '../../components/containers/youtube'
+// import YoutubeContainers from '../../components/containers/youtube'
 
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
 import head_pic from '../../assets/projects/rthk31-rthk32-linux-viewer/rthk31-rthk32-linux-viewer.png'
 
-let page_title = 'rthk31 rthk32 linux viewer'
+// let page_title = 'rthk31 rthk32 linux viewer'
 
 
 class ProjectDescription extends React.Component{

@@ -1,9 +1,9 @@
-import React,{PureComponent} from 'react';
+import React from 'react';
 
 // import Gist from 'react-gist';
 import ReactEmbedGist from 'react-embed-gist';
 
-class testGist extends React.PureComponent
+class testGist extends React.Component
 {
   render() {
     return (
