@@ -39,8 +39,8 @@ deploy:
       all_branches: true
       condition: $TRAVIS_BRANCH = "develop" && $FIREBASE_DEV_DEPLOY = "true" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
-cache:
-    npm: true
-    directories:
-        - node_modules
-        - functions/node_modules
+# cache:
+#     npm: true
+#     directories:
+#         - node_modules
+#         - functions/node_modules

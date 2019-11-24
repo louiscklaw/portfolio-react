@@ -7,7 +7,6 @@ it('renders helloworld call for gist without crashing', () => {
   const div = document.createElement('div');
 
   let gist_link = <GistLink />;
-  console.log(gist_link);
 
   ReactDOM.render(gist_link, div);
   ReactDOM.unmountComponentAtNode(div);
