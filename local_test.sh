@@ -2,5 +2,17 @@
 
 export CI=true
 
-yarn test
-yarn build
+echo 'delete existing node_modules'
+rm -rf node_modules &
+rm -rf src/node_modules &
+wait
+
+echo 're-install node dependices'
+yarn install &
+cd src && yarn install && cd .. &
+wait
+
+echo 'run test'
+yarn test &
+yarn build &
+wait
