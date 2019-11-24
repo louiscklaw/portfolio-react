@@ -44,3 +44,6 @@ cache:
     directories:
         - node_modules
         - functions/node_modules
+
+notifications:
+  slack: louislabs:x4D51HjnR30LGpqZXrdbqUgB
