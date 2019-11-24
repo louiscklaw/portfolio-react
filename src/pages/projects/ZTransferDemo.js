@@ -7,7 +7,7 @@ import NewWindowLink from '../../components/Links/NewWindowLink'
 import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
-import YoutubeContainers from '../../components/containers/youtube'
+// import YoutubeContainers from '../../components/containers/youtube'
 
 import './ProjectDescription.css';
 import './VoronTryout.css'
