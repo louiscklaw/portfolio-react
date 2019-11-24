@@ -23,7 +23,7 @@ class ProjectDescription extends React.Component{
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div>
-              <img src={hea_pic}  alt="" />
+              <img src={head_pic}  alt="" />
             </div>
             <div style={{maxWidth: "30%" }}>
               <YoutubeContainers src="https://www.youtube.com/embed/8P3VEGvMeTQ" />
