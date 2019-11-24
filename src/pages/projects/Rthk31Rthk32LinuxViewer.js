@@ -61,8 +61,7 @@ class ProjectDescription extends React.Component{
               </ul>
 
               <h3 className="topic">Source</h3>
-              <GistLink test="https://gist.github.com/louiscklaw/f9a49076aff09449a5e5e0078b30ce65"/>
-
+              <GistLink gist_id="louiscklaw/f9a49076aff09449a5e5e0078b30ce65"/>
             </div>
           </div>
         </div>
