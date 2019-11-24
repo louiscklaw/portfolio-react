@@ -17,8 +17,6 @@ import './YoutubeSplitViewTryout.css'
 
 import test_image from '../../assets/projects/youtube-split-view-tryout/youtube_split_view_tryout.png';
 
-console.log(test_image);
-
 class ProjectDescription extends React.Component{
   render(){
     return (

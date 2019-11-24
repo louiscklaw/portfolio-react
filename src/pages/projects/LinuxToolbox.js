@@ -5,6 +5,7 @@ import BackToProjects from '../../components/Links/BackToProjects'
 import ProjectTitle from '../../components/ProjectTitle'
 
 import YoutubeContainers from '../../components/containers/youtube'
+import GithubLink from '../../components/Links/GithubLink'
 
 import './ProjectDescription.css';
 import './VoronTryout.css'
@@ -17,7 +18,7 @@ class ProjectDescription extends React.Component{
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="voron 3d printer" />
+          <ProjectTitle project_title="linux toolbox" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>
@@ -30,13 +31,14 @@ class ProjectDescription extends React.Component{
 
           <div className="desc-body">
             <h3 className="topic">Purpose</h3>
-            <p>to build a opensource 3d printer named voron</p>
+            <p>ack, entr, inotify-tools</p>
 
             <h3 className="topic">Demo</h3>
             <NewWindowLink link="https://louiscklaw.github.io/tradingview-tile-tryout" />
 
             <h3 className="topic">ref/repo:</h3>
-            <NewWindowLink link="https://www.reddit.com/r/voroncorexy/" />
+            <GithubLink link="git@bitbucket.org:louiscklaw/linux_postinstall.git" />
+            <GithubLink link="https://github.com/louiscklaw/archlinux_postinstall.git" />
 
           </div>
         </div>
