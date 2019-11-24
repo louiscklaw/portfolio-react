@@ -51,6 +51,11 @@ class ProjectDescription extends React.Component{
               $ pip install -r requirements.txt
             </SourceCode>
 
+            <h3 className="topic">to install appium</h3>
+            <SourceCode lang="shell">
+              $ sudo npm install -g appium --unsafe-perm=true --allow-root
+            </SourceCode>
+
             <h3 className="topic">to execute</h3>
             <h4 className="topic">activate virtual environment</h4>
             <SourceCode lang="shell" >
