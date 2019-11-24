@@ -2,10 +2,11 @@
 
 export CI=true
 
-echo 'delete existing node_modules'
-rm -rf node_modules &
-rm -rf src/node_modules &
-wait
+echo 'skipping delete node_modules'
+# echo 'delete existing node_modules'
+# rm -rf node_modules &
+# rm -rf src/node_modules &
+# wait
 
 echo 're-install node dependices'
 yarn install &
