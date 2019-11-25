@@ -1,3 +1,5 @@
+// index.js
+
 const staticCacheName = `site-static-${checksums.static}`;
 const dynamicCacheName = `site-dynamic-${checksums.static}`;
 
