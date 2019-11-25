@@ -10,6 +10,9 @@ const debug = require( 'gulp-debug' );
 
 let asset_file_list = execSync('find src/assets',{encoding: 'utf-8'})
 
+// import {thumbnail} from "easyimage";
+const {resize} = require('easyimage');
+
 // const pug = require( 'gulp-pug' );
 // const less = require( 'gulp-less' );
 // const minifyCSS = require( 'gulp-csso' );
@@ -119,7 +122,21 @@ function helloworld(done){
     console.log('helloworld')
     done();
 }
-exports.default = series(genSWJs);
+
+function genPWAIcons( done ) {
+  for(img_size of [72,96,128,144,152,192,384,512])
+  {
+    resize( {
+      src: "src/assets/icons/icon_origional.png",
+      dst: `public/assets/icons/icon_${img_size}x${img_size}.png`,
+      width: img_size,
+      height: img_size,
+    } );
+  }
+  done()
+}
+
+exports.default = parallel(genPWAIcons, genSWJs);
 
 
 // MD5

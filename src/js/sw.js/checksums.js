@@ -1,3 +1,3 @@
 
 // checksums.js
-const checksums = {"static":"1FEF2889F78E347E7C2ADDDA6F978F1C"}
+const checksums = {"static":"9F880D3EC25F0E088A799860738BF1E0"}
