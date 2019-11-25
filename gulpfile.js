@@ -127,7 +127,7 @@ function genPWAIcons( done ) {
   for(img_size of [72,96,128,144,152,192,384,512])
   {
     resize( {
-      src: "src/assets/icons/icon_origional.png",
+      src: "src/icons/icon_origional.png",
       dst: `public/assets/icons/icon-${img_size}x${img_size}.png`,
       width: img_size,
       height: img_size,
@@ -136,7 +136,23 @@ function genPWAIcons( done ) {
   done()
 }
 
-exports.default = parallel(genPWAIcons, genSWJs);
+function copyAssetFiles(done){
+  execSync('cp -R src/assets/* public/assets')
+  done()
+}
+
+function prepareAssetDirectory(done){
+  execSync('mkdir -p public/assets/icons')
+  done()
+}
+
+exports.default = series(
+  prepareAssetDirectory,
+  parallel(
+    genPWAIcons,
+    genSWJs,
+    copyAssetFiles
+  ) );
 
 
 // MD5
