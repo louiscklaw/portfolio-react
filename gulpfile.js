@@ -128,7 +128,7 @@ function genPWAIcons( done ) {
   {
     resize( {
       src: "src/assets/icons/icon_origional.png",
-      dst: `public/assets/icons/icon_${img_size}x${img_size}.png`,
+      dst: `public/assets/icons/icon-${img_size}x${img_size}.png`,
       width: img_size,
       height: img_size,
     } );
