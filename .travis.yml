@@ -15,6 +15,7 @@ install:
 script:
   - cd $TRAVIS_BUILD_DIR
   - echo $TRAVIS_NODE_VERSION
+  - echo $TRAVIS_BRANCH
   - yarn test
   - yarn build
   - gulp
