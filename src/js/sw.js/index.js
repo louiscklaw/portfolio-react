@@ -1,10 +1,6 @@
-const staticCacheName = 'site-static-v4';
-const dynamicCacheName = 'site-dynamic-v4';
+const staticCacheName = `site-static-${checksums.static}`;
+const dynamicCacheName = `site-dynamic-${checksums.static}`;
 
-const assets = [
-  '/',
-  '/index.html'
-];
 
 const limitCacheSize = ( name, size ) => {
   // console.log('limitCacheSize calling')
@@ -27,7 +23,7 @@ self.addEventListener( 'install', evt => {
     caches.open( staticCacheName )
     .then( cache => {
       // console.log( 'caching static assets' )
-      cache.addAll( assets );
+      cache.addAll( static_file_list );
     } )
   )
 } )
