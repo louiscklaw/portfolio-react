@@ -1,8 +1,12 @@
 
 // yarn add gulp gulp-pug gulp-less gulp-csso gulp-concat gulp-javascript-obfuscator gulp-rename gulp-debug
+
 const { src, dest, parallel, series } = require( 'gulp' );
 const { exec, execSync } = require('child_process');
 const chalk = require('chalk');
+
+// const ico = require('gulp-to-ico');
+var favicons = require('gulp-favicons');
 
 const {resize} = require('easyimage');
 
@@ -17,12 +21,14 @@ const {resize} = require('easyimage');
 const debug = require( 'gulp-debug' );
 
 function getFavIcon(done){
-  resize({
-    src:'src/assets/favicon.png',
-    dst:'public/assets/favicon.png',
-    width: 64,
-    height: 64,
-  })
+  console.log('getFavIcon');
+  src( 'src/assets/favicon.png' )
+    .pipe( favicons({
+      html: 'index.html',
+    }))
+    .pipe(dest('./public/favicons'));
+
+
   done()
 }
 
@@ -39,4 +45,8 @@ function getLogo(done){
   done()
 }
 
-exports.default = series(parallel(getFavIcon,getLogo));
+exports.default = series(
+  parallel(
+    getFavIcon,
+    getLogo
+  ));
