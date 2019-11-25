@@ -38,6 +38,17 @@ deploy:
       all_branches: true
       condition: $TRAVIS_BRANCH = "develop" && $FIREBASE_DEV_DEPLOY = "true" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
 
+
+  # webapp deploy
+  - provider: script
+    skip_cleanup: true
+    script: firebase deploy -f --project $FIREBASE_DEV_PROJECT --token $FIREBASE_DEV_TOKEN --non-interactive
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH = "feature/integrate-PWA" && $TRAVIS_NODE_VERSION = $FIREBASE_NODE_VER
+
+
+
 # cache:
 #     npm: true
 #     directories:
