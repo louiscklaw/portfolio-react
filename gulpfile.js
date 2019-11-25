@@ -90,6 +90,8 @@ const checksums = ${JSON.stringify( { static: getCheckSum( asset_file_list ) } )
 `
 
 function genSWJs() {
+    execSync('cp src/manifest.json  public/manifest.json')
+
     fs.writeFileSync(
       'src/js/sw.js/static_file_list.js',
       static_file_list_template )
