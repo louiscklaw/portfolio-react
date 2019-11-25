@@ -39,10 +39,4 @@ function getLogo(done){
   done()
 }
 
-function build(done){
-  console.log(chalk.yellow('yarn build'))
-  execSync('yarn build')
-  done()
-}
-
-exports.default = series(parallel(getFavIcon,getLogo), build);
+exports.default = series(parallel(getFavIcon,getLogo));

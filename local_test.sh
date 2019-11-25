@@ -13,6 +13,9 @@ yarn install &
 cd src && yarn install && cd .. &
 wait
 
+echo 'run gulp'
+gulp
+
 echo 'run test'
 yarn test &
 yarn build &
