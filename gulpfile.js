@@ -92,6 +92,20 @@ let checksums_template = `
 const checksums = ${JSON.stringify( { static: getCheckSum( asset_file_list ) } )}
 `
 
+function genAppJs() {
+  return src( 'src/js/app.js/*.js', {
+      sourcemaps: true
+    } )
+    .pipe( order( [
+      'index.js'
+    ] ) )
+    .pipe( debug() )
+    .pipe( concat( 'app.js' ) )
+    .pipe( dest( 'public', {
+      sourcemaps: true
+    } ) )
+}
+
 function genSWJs() {
     execSync('cp src/manifest.json  public/manifest.json')
 
@@ -151,6 +165,7 @@ exports.default = series(
   parallel(
     genPWAIcons,
     genSWJs,
+    genAppJs,
     copyAssetFiles
   ) );
 
