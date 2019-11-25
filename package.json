@@ -12,6 +12,8 @@
     "babel-plugin-import-static-files": "^1.0.4",
     "global": "^4.4.0",
     "graphviz-react": "^1.0.4",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-embed-gist": "^1.0.10",
@@ -31,7 +33,8 @@
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
     "watch": "nodemon --watch src --exec 'yarn build'",
-    "hello": "react-scripts --help"
+    "hello": "react-scripts --help",
+    "gulp_w": "nodemon -w gulpfile.js -w src --ext '*' --exec 'gulp'"
   },
   "eslintConfig": {
     "extends": "react-app"
