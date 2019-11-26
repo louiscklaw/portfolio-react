@@ -16,72 +16,89 @@ import Slic3rBatchExport from '../pages/projects/Slic3rBatchExport'
 import AllwinnerV3sTryout from '../pages/projects/AllwinnerV3sTryout'
 import PrinterBoard from '../pages/projects/PrinterBoard'
 
+// project images
+import TradingviewTile from '../assets/proj_thumbnails/tradingview-dashboard.png'
+import VoronTile from '../assets/proj_thumbnails/voron-tryout.jpg'
+import AppiumBehaveNotesTile from '../assets/proj_thumbnails/appium-behave-notes.png'
+import TappyTile from '../assets/proj_thumbnails/tappy_tryout.jpg'
+import PortfolioTile from '../assets/proj_thumbnails/portfolio_tryout.png'
+import YoutubeSplitViewTile from '../assets/proj_thumbnails/youtube_split_view_tryout.png'
+import TraefikTile from '../assets/proj_thumbnails/traefik-tryout.png'
+import PetPugProjectTile from '../assets/proj_thumbnails/pet-pug-project.png'
+import ZTransferDemoTile from '../assets/proj_thumbnails/z-transfer-demo.png'
+import Rthk31Rthk32LinuxViewerTile from '../assets/proj_thumbnails/rthk31-rthk32-linux-viewer.png'
+import OpenCVCarCountingTile from '../assets/proj_thumbnails/opencv-car-counting.jpg'
+import LinuxToolboxTile from '../assets/proj_thumbnails/linux-toolbox.png'
+import HKOWeatherBotTile from '../assets/proj_thumbnails/hko-weather-bot.jpg'
+import Slic3rBatchExportTile from '../assets/proj_thumbnails/slic3r-batch-export.png'
+import AllwinnerV3STile from '../assets/proj_thumbnails/allwinner-v3s-tryout.jpg'
+import PrinterBoardTile from '../assets/proj_thumbnails/printer-board.png'
 
 export default {
   'tradingview-dashboard': {
-    image: '/assets/proj_thumbnails/tradingview-dashboard.png',
+    image: TradingviewTile,
     component: TradingviewDashboard,
   },
   'voron-tryout': {
-    image: '/assets/proj_thumbnails/voron-tryout.jpg',
+    image: VoronTile,
     component: VoronTryout
   },
   'appium-behave-notes': {
-    image: '/assets/proj_thumbnails/appium-behave-notes.png',
+    image: AppiumBehaveNotesTile,
     component: AppiumBehaveNotes
   },
   'tappy': {
-    image: '/assets/proj_thumbnails/tappy_tryout.jpg',
+    image: TappyTile,
     component: Tappy
   },
   'portfolio': {
-    image: '/assets/proj_thumbnails/portfolio_tryout.png',
+    image: PortfolioTile,
     component: Portfolio
   },
   'youtube-split-view-tryout': {
-    image: '/assets/proj_thumbnails/youtube_split_view_tryout.png',
+    image: YoutubeSplitViewTile,
     component: YoutubeSplitViewTryout
   },
   'traefik-tryout': {
-    image: '/assets/proj_thumbnails/traefik-tryout.png',
+    image: TraefikTile,
     component: TraefikTryout
   },
   'pet-pug-project': {
-    image: '/assets/proj_thumbnails/pet-pug-project.png',
+    image: PetPugProjectTile,
     component: PetPugProject
   },
 
   'z-transfer-demo': {
-    image: '/assets/proj_thumbnails/z-transfer-demo.png',
+    image: ZTransferDemoTile,
     component: ZTransferDemo
   },
   'rthk31-rthk32-linux-viewer': {
-    image: '/assets/proj_thumbnails/rthk31-rthk32-linux-viewer.png',
+    image: Rthk31Rthk32LinuxViewerTile,
     component: Rthk31Rthk32LinuxViewer
   },
   'opencv-car-counting': {
-    image: '/assets/proj_thumbnails/opencv-car-counting.jpg',
+    image: OpenCVCarCountingTile,
     component: OpencvCarCounting
   },
   'linux-toolbox': {
-    image: '/assets/proj_thumbnails/linux-toolbox.png',
+    image: LinuxToolboxTile,
     component: LinuxToolbox
   },
   'hko-weather-bot': {
-    image: '/assets/proj_thumbnails/hko-weather-bot.jpg',
+    image: HKOWeatherBotTile,
     component: HkoWeatherBot
   },
 
   'slic3r-batch-export': {
-    image: '/assets/proj_thumbnails/slic3r-batch-export.png',
+    image: Slic3rBatchExportTile,
     component: Slic3rBatchExport
   },
   'allwinner-v3s-tryout': {
-    image: '/assets/proj_thumbnails/allwinner-v3s-tryout.jpg',
+    image: AllwinnerV3STile,
     component: AllwinnerV3sTryout
   },
   'printer-board': {
-    image: '/assets/proj_thumbnails/printer-board.png',
+    image: PrinterBoardTile,
     component: PrinterBoard
   },
 

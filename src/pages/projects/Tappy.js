@@ -9,6 +9,7 @@ import YoutubeContainers from '../../components/containers/youtube'
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
+import head_pic from '../../assets/projects/tappy/tappy_tryout.jpg'
 
 class ProjectDescription extends React.Component{
   render(){
@@ -21,7 +22,7 @@ class ProjectDescription extends React.Component{
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div >
-              <img src="/assets/projects/tappy/20170724_121632-e1500887947112.jpg"  alt="" />
+              <img src={head_pic}  alt="" />
             </div>
             <div style={{maxWidth: "30%" }}>
               <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />

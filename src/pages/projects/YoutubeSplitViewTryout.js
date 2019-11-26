@@ -15,7 +15,7 @@ import MetaProjectDetail from '../../components/meta/ProjectDetail'
 import './ProjectDescription.css';
 import './YoutubeSplitViewTryout.css'
 
-import test_image from '../../assets/projects/youtube-split-view-tryout/youtube_split_view_tryout.png';
+import head_pic from '../../assets/projects/youtube-split-view-tryout/youtube_split_view_tryout.png';
 
 class ProjectDescription extends React.Component{
   render(){
@@ -32,7 +32,7 @@ class ProjectDescription extends React.Component{
 
             <div className="desc-header-picture" style={{display:"flex"}}>
               <div>
-                <img src={test_image} alt="" />
+                <img src={head_pic} alt="" />
               </div>
               <div style={{maxWidth: "30%" }}>
                 <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />

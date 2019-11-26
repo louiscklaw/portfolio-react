@@ -7,6 +7,7 @@ import BackToProjects from '../../components/Links/BackToProjects'
 import './ProjectDescription.css';
 import './TradingviewDashboard.css';
 
+import head_pic from '../../assets/proj_thumbnails/tradingview-dashboard.png'
 
 class ProjectDescription extends React.Component{
   render(){
@@ -19,7 +20,7 @@ class ProjectDescription extends React.Component{
           <ProjectTitle project_title="tradingview dashboard" />
 
           <div className="desc-header-picture" >
-            <img src="/assets/proj_thumbnails/tradingview-dashboard.png" alt="" />
+            <img src={head_pic} alt="" />
           </div>
 
           <div className="desc-body">

@@ -21,13 +21,16 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-syntax-highlighter": "^11.0.2",
-    "serve": "^11.2.0"
+    "react-app-rewire-workbox": "^2.0.1",
+    "react-app-rewired": "^2.1.5",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=4096 start",
+    "start": "react-app-rewired --max_old_space_size=4096 start",
     "predeploy": "react-scripts --max_old_space_size=4096 build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "react-app-rewired build",
+    "build_w": "nodemon -w src --ext '*' --exec 'yarn build'",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postbuild": "react-snap",
     "watch": "nodemon --watch src --exec 'yarn build'",

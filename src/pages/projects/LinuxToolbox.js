@@ -10,6 +10,7 @@ import GithubLink from '../../components/Links/GithubLink'
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
+import head_pic from '../../assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg'
 
 class ProjectDescription extends React.Component{
   render(){
@@ -22,7 +23,7 @@ class ProjectDescription extends React.Component{
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>
-              <img src="/assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg"  alt="" />
+              <img src={head_pic}  alt="" />
             </div>
             <div style={{maxWidth: "30%" }}>
               <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />

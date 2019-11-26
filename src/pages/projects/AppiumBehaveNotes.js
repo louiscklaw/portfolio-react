@@ -12,6 +12,8 @@ import Graphviz from '../../components/containers/graphviz'
 import './ProjectDescription.css';
 import './AppiumBehaveNotes.css'
 
+import head_pic from '../../assets/appium-behave/appium-behave.png'
+
 let execute_script=
 `$ virtualenv venv
 $ source venv/bin/activate`
@@ -28,7 +30,7 @@ class ProjectDescription extends React.Component{
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>
-              <img src="/assets/appium-behave/appium-behave.png"  alt="" />
+              <img src={head_pic}  alt="" />
             </div>
             <div style={{maxWidth: "30%" }}>
               <YoutubeContainers src="https://www.youtube.com/embed/YNCB23V38x0" />
