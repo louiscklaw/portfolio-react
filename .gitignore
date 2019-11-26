@@ -3,6 +3,8 @@
 .firebase
 firebase-debug.log
 
+public/assets
+
 _raw
 *cache
 
