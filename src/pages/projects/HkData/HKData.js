@@ -28,9 +28,11 @@ class HKData extends Component{
             <div className="rel-links">
               <h2 className="subtitle is-4">related links</h2>
               <ul>
+                <li><a href="https://data.gov.hk/en/">資料一線通</a></li>
                 <li>
                   <a href="https://geodata.gov.hk/gs/">https://geodata.gov.hk/gs/</a>
                 </li>
+                <li><a href="https://api.mplus.org.hk/tc/documentation/about#thedata">https://api.mplus.org.hk/tc/documentation/about#thedata</a></li>
               </ul>
             </div>
 
