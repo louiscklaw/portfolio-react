@@ -34,7 +34,14 @@ import Slic3rBatchExportTile from '../assets/proj_thumbnails/slic3r-batch-export
 import AllwinnerV3STile from '../assets/proj_thumbnails/allwinner-v3s-tryout.jpg'
 import PrinterBoardTile from '../assets/proj_thumbnails/printer-board.png'
 
+import HKData from '../pages/projects/HkData/HKData'
+import HKDataTile from '../pages/projects/HkData/4664932266934272.png'
+
 export default {
+  'hkdata': {
+    image: HKDataTile,
+    component: HKData,
+  },
   'tradingview-dashboard': {
     image: TradingviewTile,
     component: TradingviewDashboard,
