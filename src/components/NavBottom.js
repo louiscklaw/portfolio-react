@@ -10,29 +10,29 @@ export default () => (
       <ul className="social-links">
         <li>
           <a href="https://www.facebook.com/louiscklaw" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook"></i>
+            <i  className="fab fa-facebook"></i>
           </a>
         </li>
         <li>
           <a href="https://github.com/louiscklaw" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
+            <i  className="fab fa-github"></i>
           </a>
         </li>
         <li>
           <a href="https://keybase.io/louiscklaw" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-keybase"></i></a>
+               className="fab fa-keybase"></i></a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/louiscklaw" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-linkedin"></i>
+               className="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
           <a href="https://louislabs.slack.com" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-slack"></i></a>
+               className="fab fa-slack"></i></a>
         </li>
         <li>
-          <a href="https://t.me/louislabs" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+          <a href="https://t.me/louislabs" target="_blank" rel="noopener noreferrer"><i  className="fab fa-telegram"></i></a>
         </li>
       </ul>
     </div>
