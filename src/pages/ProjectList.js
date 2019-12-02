@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectTile from '../components/ProjectTile'
+import ProjectTile from '../components/ProjectTile/ProjectTile'
 
 import './ProjectList.css'
 

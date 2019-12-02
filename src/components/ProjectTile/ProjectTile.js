@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-import './ProjectTile.css'
+import './ProjectTile.scss'
 
 export default ({proj_image, proj_name, proj_link}) => {
   return (
