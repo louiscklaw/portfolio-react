@@ -1,14 +1,11 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
-import './NavTop.css'
+import './NavTop.scss'
 
 export default () => (
   <div className="nav-top">
-    top
-    <FontAwesomeIcon icon={faCoffee} />
-
+    <div className="greeting-plate">
+      Hi, I'm louis <span role="img" aria-label="Hi">👋</span>
+    </div>
   </div>
 )

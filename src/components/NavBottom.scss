@@ -1,0 +1,48 @@
+.credit-container a{
+  position: relative;
+  top: 10px;
+}
+
+.credit-container{
+  padding-top: 30px;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.source-code-link{
+  width:100%;
+  text-align: center;
+  font-size:0.9em;
+}
+
+
+.build-status{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.social-links li a {
+  color: #fff;
+
+  font-size: 1.5em;
+  font-weight: normal;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 10px;
+}
+
+.social-links {
+  display: inline-flex;
+  list-style: none;
+}
+
+.social-links-container{
+  width: 100%;
+  text-align:center;
+}
+
+.nav-bottom {
+  height: 34vh;
+}

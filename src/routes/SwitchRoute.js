@@ -3,11 +3,12 @@ import React from 'react';
 import {Switch} from 'react-router-dom'
 import {Route} from 'react-router-dom'
 
-import Home from '../pages/Home'
+// import Home from '../pages/Home'
 import Contact from '../pages/Contact'
 import Projects from '../pages/Projects'
 import Logs from '../pages/Logs'
 import About from '../pages/About'
+import Credits from '../pages/Credits/Credits'
 
 import RoutesProjectDetail from './ProjectDetail'
 
@@ -18,11 +19,12 @@ import NotFound from '../pages/NotFound'
 
 export default () => (
   <Switch>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={Projects} />
     <Route path="/projects" component={Projects} />
     <Route path="/logs" component={Logs} />
     <Route path="/contact" component={Contact} />
     <Route path="/about" component={About} />
+    <Route path="/credits" component={Credits} />
 
     <Route path="/hello" component={RoutesHelloworld} />
     <Route path="/project_detail" component={RoutesProjectDetail} />
