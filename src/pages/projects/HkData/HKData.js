@@ -25,6 +25,7 @@ class HKData extends Component{
             <p>
               try to make a search interface for hko data information
             </p>
+
             <div className="rel-links">
               <h2 className="subtitle is-4">related links</h2>
               <ul>
@@ -36,6 +37,14 @@ class HKData extends Component{
               </ul>
             </div>
 
+            <div className="rel-links">
+              <h2 className="subtitle is-4">worth mentioning</h2>
+              <ul>
+                <li>
+                  firebase function
+                </li>
+              </ul>
+            </div>
             <div className="rel-links">
               <h2 className="subtitle is-4">Demo</h2>
               <ul>
