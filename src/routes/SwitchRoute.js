@@ -1,21 +1,20 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom'
 
-import {Switch} from 'react-router-dom'
-import {Route} from 'react-router-dom'
-
-// import Home from '../pages/Home'
-import Contact from '../pages/Contact'
-import Projects from '../pages/Projects'
-import Logs from '../pages/Logs'
-import About from '../pages/About'
-import Credits from '../pages/Credits/Credits'
+// import Home from '../pages/Home/Home'
+import {
+  Contact,
+  Projects,
+  Logs,
+  About,
+  Credits,
+  NotFound
+} from '../pages/index'
 
 import RoutesProjectDetail from './ProjectDetail'
 
 import RoutesHelloworld from './Helloworld'
 // import Helloworld from '../pages/Helloworld'
-
-import NotFound from '../pages/NotFound'
 
 export default () => (
   <Switch>

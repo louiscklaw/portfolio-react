@@ -9,7 +9,7 @@ import YoutubeContainers from '../../components/containers/youtube'
 import './ProjectDescription.css';
 import './VoronTryout.css'
 
-import head_pic from '../../assets/proj_thumbnails/tradingview-dashboard.png'
+import head_pic from '../../components/misc/parking.png'
 
 class ProjectDescription extends React.Component{
   render(){

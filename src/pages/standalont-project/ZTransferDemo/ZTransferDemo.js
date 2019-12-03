@@ -1,16 +1,17 @@
 import React from 'react';
 
-import NewWindowLink from '../../components/Links/NewWindowLink'
-import BackToProjects from '../../components/Links/BackToProjects'
-import ProjectTitle from '../../components/ProjectTitle'
 
-import YoutubeContainers from '../../components/containers/youtube'
+import {ProjectTitle,
+  NewWindowLink,
+  BackToProjects,
+  YoutubeContainers
+} from '../../../components/index'
 
-import './ProjectDescription.css';
-import './VoronTryout.css'
 
-import head_pic from '../../components/misc/parking.png'
+// import './ProjectDescription.css';
+// import './VoronTryout.css'
 
+import head_pic from '../../assets/down_sampled/voron-tryout/IMG_20190325_115322.jpg'
 
 class ProjectDescription extends React.Component{
   render(){
@@ -19,7 +20,7 @@ class ProjectDescription extends React.Component{
         <div className="project-description">
           <BackToProjects />
 
-          <ProjectTitle project_title="printer board" />
+          <ProjectTitle project_title="z transfer demo" />
 
           <div className="desc-header-picture" style={{display:"flex"}}>
             <div style={{maxWidth: "30%" }}>

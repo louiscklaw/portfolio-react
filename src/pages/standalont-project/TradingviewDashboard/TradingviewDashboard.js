@@ -1,13 +1,13 @@
 import React from 'react';
 
-import ProjectTitle from '../../components/ProjectTitle'
-import NewWindowLink from '../../components/Links/NewWindowLink'
-import BackToProjects from '../../components/Links/BackToProjects'
+import {ProjectTitle,
+  NewWindowLink,
+  BackToProjects} from '../../../components/index'
 
-import './ProjectDescription.css';
-import './TradingviewDashboard.css';
+// import './ProjectDescription.css';
+// import './TradingviewDashboard.css';
 
-import head_pic from '../../components/misc/parking.png'
+import head_pic from './tradingview-dashboard.png'
 
 class ProjectDescription extends React.Component{
   render(){

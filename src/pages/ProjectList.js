@@ -9,7 +9,7 @@ import tile_configs from '../config/tile_configs'
 function tileContent(){
   return Object.keys(tile_configs).map( tile_key => {
     return (
-      <li>
+      <li key={tile_key}>
         <ProjectTile
           proj_name={tile_key}
           proj_image={tile_configs[tile_key]['image']}

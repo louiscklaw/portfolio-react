@@ -1,4 +1,9 @@
-import TradingviewDashboard from '../pages/projects/TradingviewDashboard'
+
+import {
+  TradingviewDashboard, TradingviewTile
+} from '../pages/standalont-project/index'
+
+// import TradingviewDashboard from '../pages/projects/TradingviewDashboard'
 import VoronTryout from '../pages/projects/VoronTryout'
 
 import AppiumBehaveNotes from '../pages/projects/AppiumBehaveNotes'
@@ -17,7 +22,7 @@ import AllwinnerV3sTryout from '../pages/projects/AllwinnerV3sTryout'
 import PrinterBoard from '../pages/projects/PrinterBoard'
 
 // project images
-import TradingviewTile from '../assets/proj_thumbnails/tradingview-dashboard.png'
+// import TradingviewTile from '../assets/proj_thumbnails/tradingview-dashboard.png'
 import VoronTile from '../assets/proj_thumbnails/voron-tryout.jpg'
 import AppiumBehaveNotesTile from '../assets/proj_thumbnails/appium-behave-notes.png'
 import TappyTile from '../assets/proj_thumbnails/tappy_tryout.jpg'

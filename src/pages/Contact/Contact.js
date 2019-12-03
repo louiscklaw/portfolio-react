@@ -1,5 +1,5 @@
 import React from 'react';
-import MetaContacts from '../components/meta/Contact'
+import MetaContacts from './Meta'
 
 export default () => (
   <div>
