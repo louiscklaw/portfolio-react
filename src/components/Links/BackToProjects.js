@@ -6,6 +6,3 @@ export default () =>  (
       <Link to="/projects">Back</Link>
     </div>
   )
-
-
-// <Link to="/projects" >Back</Link>
