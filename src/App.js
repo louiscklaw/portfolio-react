@@ -6,7 +6,7 @@ import {BrowserRouter} from 'react-router-dom'
 
 import './App.css';
 
-import Nav from './components/Nav'
+import Nav from './components/Nav/Nav'
 
 import SwitchRoute from './routes/SwitchRoute'
 
