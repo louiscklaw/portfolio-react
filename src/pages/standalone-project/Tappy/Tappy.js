@@ -13,7 +13,7 @@ import {
 // import './ProjectDescription.css';
 // import './VoronTryout.css'
 
-import head_pic from '../../assets/projects/tappy/tappy_tryout.jpg'
+import head_pic from './tappy_tryout.jpg'
 
 class ProjectDescription extends React.Component{
   render(){
