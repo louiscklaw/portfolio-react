@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProjectTile from '../components/ProjectTile/ProjectTile'
 
-import './ProjectList.css'
+import './ProjectList.scss'
 
 import tile_configs from '../config/tile_configs'
 

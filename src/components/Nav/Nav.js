@@ -4,7 +4,7 @@ import NavTop from './NavTop'
 import NavMiddle from './NavMiddle'
 import NavBottom from './NavBottom'
 
-import './Nav.css'
+import './Nav.scss'
 
 class Nav extends Component{
   render() {

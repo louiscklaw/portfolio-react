@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ProjectTitle.css';
+import './ProjectTitle.scss';
 
 class ProjectTitle extends React.Component{
   render(){
